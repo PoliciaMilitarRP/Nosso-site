@@ -9,10 +9,10 @@
 }
 :root {
   /* Tons de Vermelho (Mais claro → Mais escuro) */
-  --red-1: #ff6b6b; /* Vermelho rosado */
-  --red-2: #e63946; /* Vermelho vibrante */
-  --red-3: #a52a2a; /* Vermelho escuro */
-  --red-4: #8b0000; /* Vermelho queimado */
+  --red-1: #6b93ff; /* Vermelho rosado */
+  --red-2: #3945e6; /* Vermelho vibrante */
+  --red-3: #322aa5; /* Vermelho escuro */
+  --red-4: #000e8b; /* Vermelho queimado */
 
   /* Cores de Suporte */
   --gray-1: #fdfdfd; /* Branco gelo */
@@ -230,14 +230,14 @@ section.habilidades .flex {
 }
 .habilidades .habilidades-box:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(230, 57, 70, 0.471);
+  box-shadow: 0 0 20px rgb(230, 198, 57);
 }
 .habilidades .habilidades-box i {
   font-size: 70px;
   color: var(--red-2);
 }
 .habilidades .habilidades-box h3 {
-  font-size: 28px;
+  font-size: 25px;
   margin: 15px 0;
 }
 /*Estilo sobre*/
@@ -249,8 +249,8 @@ section.sobre .flex {
   gap: 60px;
 }
 .img-sobre > img {
-  width: 100%; /* Ou um valor fixo */
-  height: auto; /* Mantém a proporção */
+  width: 500px; /* Ou um valor fixo */
+  height: 500px; /* Mantém a proporção */
   object-fit: cover; /* Cobre a área sem distorcer */
   border-radius: 10px;
   margin-right: 10px;
@@ -263,22 +263,27 @@ section.sobre .flex {
 }
 .sobre .txt-sobre h2 span {
   color: var(--red-2);
-  display: block;
 }
 .sobre .txt-sobre p {
   margin: 20px 0;
   text-align: justify;
   text-indent: 20;
 }
+.btn-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 .btn-social button {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  background-color: #f32121;
-  font-size: 22px;
+  background-color: var(--red-4);
+  font-size: 50px;
   cursor: pointer;
   border: none;
-  margin: 0 5px;
+  margin: 30px 5px;
   transition: 0.2s;
 }
 .txt-sobre .btn-social button:hover {
@@ -323,51 +328,15 @@ section.portfolio .flex {
   opacity: 0;
   transition: 0.5s;
 }
+.insigina {
+  width: 150px;
+  height: 150px;
+}
 .overlay:hover {
   opacity: 1;
 }
 /*Estilos do formulario de contato*/
-section.formulario {
-  padding: 80px 4%;
-}
-form {
-  max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 40px;
-}
-form input,
-form textarea {
-  width: 100%;
-  background-color: #242424;
-  border: 0;
-  outline: 0;
-  padding: 20px 15px;
-  border-radius: 15px;
-  color: #fff;
-  font-size: 18px;
-}
-form textarea {
-  resize: none;
-  max-height: 200px;
-  height: 200px;
-}
-form .btn-enviar {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-form .btn-enviar input {
-  width: 120px;
-  background-color: var(--red-2);
-  color: #000;
-  font-weight: 700;
-  cursor: pointer;
-  transition: 0.2s;
-}
+.btn-social
 /*estilo rodapé*/
 footer {
   padding: 40px 4%;
